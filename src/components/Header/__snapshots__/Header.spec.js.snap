@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Should renders Header component 1`] = `
+<div>
+  <header
+    class="sc-gtsrHT kNwwym"
+  >
+    <div
+      class="sc-jSFjdj edKxXR"
+    >
+      <picture>
+        <source
+          media="(max-width: 576px)"
+          srcset="mobile-icon.png"
+        />
+        <img
+          alt="Pied Piper logo"
+          class="sc-eCApnc elGaee margin-x"
+          src="logo-desktop.png"
+        />
+      </picture>
+      <form
+        class="margin-x"
+      >
+        <input
+          class="sc-dlnjwi ikkser"
+          placeholder="Search"
+          type="text"
+        />
+      </form>
+    </div>
+    <div
+      class="sc-jSFjdj edKxXR nav hide-mobile"
+    >
+      <div
+        class="margin-x hide-mobile"
+      >
+        <label
+          class="sc-bdnxRM ibymvO switch"
+          for="switch-dark-mode"
+          role="switch"
+        >
+          <input
+            id="switch-dark-mode"
+            type="checkbox"
+          />
+          <span
+            class="slider round"
+          />
+        </label>
+      </div>
+      <figure
+        class="margin-x"
+      >
+        <img
+          alt="current user avatar"
+          class="sc-hKFxyN lbcAzq"
+          src="undraw_female_avatar.svg"
+        />
+      </figure>
+    </div>
+  </header>
+</div>
+`;
