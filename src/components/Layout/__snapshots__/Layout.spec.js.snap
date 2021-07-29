@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Should renders Layout component 1`] = `
+<div>
+  <main
+    class="container"
+  />
+</div>
+`;
+
+exports[`Layout Should renders a children element 1`] = `
+<div>
+  <main
+    class="container"
+  >
+    <p>
+      Hello world!
+    </p>
+  </main>
+</div>
+`;
