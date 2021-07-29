@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ToggleSwitch Should renders a ToggleStwitch component 1`] = `
+<div>
+  <label
+    class="sc-bdnxRM ibymvO switch"
+    for="switch-dark-mode"
+    role="switch"
+  >
+    <input
+      data-testid="input-checkbox"
+      id="switch-dark-mode"
+      type="checkbox"
+    />
+    <span
+      class="slider round"
+    />
+  </label>
+</div>
+`;
