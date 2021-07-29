@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideosList Should renders VideosList component 1`] = `
+<div>
+  <div
+    class="sc-bdnxRM eSwpVd"
+  >
+    <figure>
+      <img
+        alt="fake video title thumbnail"
+        src="fake-video-url-image.png"
+      />
+    </figure>
+    <div
+      class="sc-gtsrHT eMBaCB"
+    >
+      <img
+        alt="fake channel title"
+        class="channel-avatar"
+        src="fake-channel-image.png"
+      />
+      <div
+        class="margin-x"
+      >
+        <a
+          class="sc-dlnjwi hzuETT"
+          href="https://www.youtube.com/watch?v=fakeVideoId"
+        >
+          fake video title
+        </a>
+        <div>
+          <p>
+            fake channel title
+          </p>
+          <p>
+            2014-09-27T01:39:18Z
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
