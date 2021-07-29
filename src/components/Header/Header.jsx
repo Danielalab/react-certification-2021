@@ -86,7 +86,7 @@ const Header = () => (
         <ToggleSwitch />
       </div>
       <figure className="margin-x">
-        <Avatar src={avatar} />
+        <Avatar src={avatar} alt="current user avatar" />
       </figure>
     </Wrapper>
   </HeaderStyled>
