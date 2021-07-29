@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Page Should renders Home page component 1`] = `
+<div>
+  <section
+    class="sc-bdnxRM iDdjcH"
+  >
+    <div
+      data-testid="videos-list"
+    >
+      <p>
+        Dummy Videos List component
+      </p>
+    </div>
+  </section>
+</div>
+`;
