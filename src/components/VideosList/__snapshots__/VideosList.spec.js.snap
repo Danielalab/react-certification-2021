@@ -3,7 +3,7 @@
 exports[`VideosList Should renders VideosList component 1`] = `
 <div>
   <div
-    class="sc-bdnxRM eSwpVd"
+    class="sc-bdnxRM iIRjbH"
   >
     <figure>
       <img
@@ -16,11 +16,11 @@ exports[`VideosList Should renders VideosList component 1`] = `
     >
       <img
         alt="fake channel title"
-        class="channel-avatar"
+        class="sc-hKFxyN bdMQIT"
         src="fake-channel-image.png"
       />
       <div
-        class="margin-x"
+        class="sc-jSFjdj bgycdW margin-x"
       >
         <a
           class="sc-dlnjwi hzuETT"
@@ -29,10 +29,14 @@ exports[`VideosList Should renders VideosList component 1`] = `
           fake video title
         </a>
         <div>
-          <p>
+          <p
+            class="sc-eCApnc fpRBdY"
+          >
             fake channel title
           </p>
-          <p>
+          <p
+            class="sc-eCApnc fpRBdY"
+          >
             2014-09-27T01:39:18Z
           </p>
         </div>
