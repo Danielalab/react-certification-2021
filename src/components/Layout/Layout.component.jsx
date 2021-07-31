@@ -1,9 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import './Layout.styles.css';
+const LayoutStyled = styled.main`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+`;
 
 function Layout({ children }) {
-  return <main className="container">{children}</main>;
+  return <LayoutStyled>{children}</LayoutStyled>;
 }
 
 export default Layout;

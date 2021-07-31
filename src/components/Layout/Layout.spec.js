@@ -9,11 +9,10 @@ describe('Layout', () => {
     expect(container).toMatchSnapshot();
   });
 
-  test('Should contains a "main" tag with "container" class', () => {
+  test('Should contains a "main" tag', () => {
     const { container } = render(<Layout />);
     const mainElement = container.querySelector('main');
     expect(mainElement).toBeInTheDocument();
-    expect(mainElement.classList.contains('container')).toBe(true);
   });
 
   test('Should renders a children element', () => {

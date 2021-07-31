@@ -3,7 +3,7 @@
 exports[`Layout Should renders Layout component 1`] = `
 <div>
   <main
-    class="container"
+    class="sc-bdnxRM iYBsxF"
   />
 </div>
 `;
@@ -11,7 +11,7 @@ exports[`Layout Should renders Layout component 1`] = `
 exports[`Layout Should renders a children element 1`] = `
 <div>
   <main
-    class="container"
+    class="sc-bdnxRM iYBsxF"
   >
     <p>
       Hello world!
