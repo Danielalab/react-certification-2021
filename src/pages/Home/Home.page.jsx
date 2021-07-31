@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import VideosList from '../../components/VideosList/VideosList';
+import VideosList from '../../components/VideosList';
 
 const Wrapper = styled.section`
   display: flex;

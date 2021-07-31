@@ -1,4 +1,4 @@
-import VideosList from './VideosList';
+import VideosList from './VideosList.component';
 
 const { render, screen } = require('@testing-library/react');
 

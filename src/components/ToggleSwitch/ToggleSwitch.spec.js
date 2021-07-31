@@ -1,4 +1,4 @@
-import ToggleSwitch from './TogleSwitch';
+import ToggleSwitch from './TogleSwitch.component';
 
 const { render, screen } = require('@testing-library/react');
 

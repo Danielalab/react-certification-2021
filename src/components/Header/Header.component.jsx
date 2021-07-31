@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import avatar from '../../assets/images/undraw_female_avatar.svg';
 import logoDesktop from '../../assets/images/logo-desktop.png';
 import logoMobile from '../../assets/images/mobile-icon.png';
-import ToggleSwitch from '../ToggleSwitch/TogleSwitch';
+import ToggleSwitch from '../ToggleSwitch';
 
 const HeaderStyled = styled.header`
   background-color: #ffffff;

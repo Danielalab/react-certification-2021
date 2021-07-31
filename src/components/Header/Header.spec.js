@@ -1,4 +1,4 @@
-import Header from './Header';
+import Header from './Header.component';
 
 const { render, screen } = require('@testing-library/react');
 

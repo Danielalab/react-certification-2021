@@ -2,7 +2,7 @@ import Home from './Home.page';
 
 const { render, screen } = require('@testing-library/react');
 
-jest.mock('../../components/VideosList/VideosList', () => {
+jest.mock('../../components/VideosList/VideosList.component', () => {
   return function DummyVideosList() {
     return (
       <div data-testid="videos-list">
