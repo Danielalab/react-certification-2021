@@ -3,10 +3,10 @@
 exports[`Header Should renders Header component 1`] = `
 <div>
   <header
-    class="sc-gtsrHT kNwwym"
+    class="sc-hKFxyN htvvhm"
   >
     <div
-      class="sc-jSFjdj edKxXR"
+      class="sc-iCoGMd ihqXQh"
     >
       <picture>
         <source
@@ -15,7 +15,7 @@ exports[`Header Should renders Header component 1`] = `
         />
         <img
           alt="Pied Piper logo"
-          class="sc-eCApnc elGaee margin-x"
+          class="sc-gKAaRy eWqJQX margin-x"
           src="logo-desktop.png"
         />
       </picture>
@@ -23,30 +23,31 @@ exports[`Header Should renders Header component 1`] = `
         class="margin-x"
       >
         <input
-          class="sc-dlnjwi ikkser"
+          class="sc-eCApnc dIlmAH"
           placeholder="Search"
           type="text"
         />
       </form>
     </div>
     <div
-      class="sc-jSFjdj edKxXR nav hide-mobile"
+      class="sc-iCoGMd ihqXQh nav hide-mobile"
     >
       <div
         class="margin-x hide-mobile"
       >
         <label
-          class="sc-bdnxRM ibymvO switch"
+          class="sc-bdnxRM fzaqfv switch"
           for="switch-dark-mode"
           role="switch"
         >
           <input
+            class="sc-gtsrHT flAbm"
             data-testid="input-checkbox"
             id="switch-dark-mode"
             type="checkbox"
           />
           <span
-            class="slider round"
+            class="sc-dlnjwi dSfqLy"
           />
         </label>
       </div>
@@ -55,7 +56,7 @@ exports[`Header Should renders Header component 1`] = `
       >
         <img
           alt="current user avatar"
-          class="sc-hKFxyN lbcAzq"
+          class="sc-jSFjdj elchRP"
           src="undraw_female_avatar.svg"
         />
       </figure>

@@ -6,65 +6,63 @@ const ToggleLabel = styled.label`
   display: inline-block;
   width: 60px;
   height: 34px;
-  > input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-    &:before {
-      position: absolute;
-      content: '';
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background-color: white;
-      transition: 0.4s;
-    }
-    &:checked + .slider {
-      background-color: #f85f73;
-    }
-    &:focus + .slider {
-      box-shadow: 0 0 1px #f85f73;
-    }
-    &:checked + .slider:before {
-      -webkit-transform: translateX(26px);
-      -ms-transform: translateX(26px);
-      transform: translateX(26px);
-    }
-  }
-  > .slider {
+`;
+
+const Input = styled.input`
+  opacity: 0;
+  width: 0;
+  height: 0;
+  &:before {
     position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
     transition: 0.4s;
-    &:before {
-      position: absolute;
-      content: '';
-      height: 26px;
-      width: 26px;
-      left: 4px;
-      bottom: 4px;
-      background-color: white;
-      -webkit-transition: 0.4s;
-      transition: 0.4s;
-    }
-    &.round {
-      border-radius: 34px;
-      &:before {
-        border-radius: 50%;
-      }
-    }
+  }
+  &:checked + span {
+    background-color: #f85f73;
+  }
+  &:focus + span {
+    box-shadow: 0 0 1px #f85f73;
+  }
+  &:checked + span:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+`;
+
+const Slider = styled.span`
+  border-radius: 34px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  &:before {
+    border-radius: 50%;
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
   }
 `;
 
 const ToggleSwitch = () => (
   <ToggleLabel htmlFor="switch-dark-mode" className="switch" role="switch">
-    <input id="switch-dark-mode" type="checkbox" data-testid="input-checkbox" />
-    <span className="slider round" />
+    <Input id="switch-dark-mode" type="checkbox" data-testid="input-checkbox" />
+    <Slider />
   </ToggleLabel>
 );
 
