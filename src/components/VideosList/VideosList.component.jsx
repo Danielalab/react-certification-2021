@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { items } from './youtube-videos-mock.json';
-
-const { snippet: channel } = items.shift();
+import defaultChannelAvatar from '../../assets/images/undraw_default_avatar.svg';
 
 const VideoCard = styled.div`
   max-width: 320px;
@@ -34,25 +32,29 @@ const MarginX = styled.div`
   margin: 0 0.75rem;
 `;
 
-const VideosList = () =>
-  items.map(({ id, snippet }) => (
-    <VideoCard key={id.videoId}>
+const Video = ({ id, videoData }) => {
+  return (
+    <VideoCard>
       <figure>
-        <img src={snippet.thumbnails.medium.url} alt={`${snippet.title} thumbnail`} />
+        <img src={videoData.thumbnails.medium.url} alt={`${videoData.title} thumbnail`} />
       </figure>
       <Wrapper>
-        <ChannelAvatar src={channel.thumbnails.default.url} alt={channel.channelTitle} />
+        <ChannelAvatar src={defaultChannelAvatar} alt={videoData.channelTitle} />
         <MarginX className="margin-x">
-          <Link href={`https://www.youtube.com/watch?v=${id.videoId}`}>
-            {snippet.title}
-          </Link>
+          <Link href={`https://www.youtube.com/watch?v=${id}`}>{videoData.title}</Link>
           <div>
-            <Text>{snippet.channelTitle}</Text>
-            <Text>{snippet.publishedAt}</Text>
+            <Text>{videoData.channelTitle}</Text>
+            <Text>{videoData.publishedAt}</Text>
           </div>
         </MarginX>
       </Wrapper>
     </VideoCard>
+  );
+};
+
+const VideosList = ({ videos }) =>
+  videos.map(({ id, snippet }) => (
+    <Video key={id.videoId} id={id.videoId} videoData={snippet} />
   ));
 
 export default VideosList;
