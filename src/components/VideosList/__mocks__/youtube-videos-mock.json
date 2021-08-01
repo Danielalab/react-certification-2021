@@ -2,16 +2,16 @@
   "items": [
     {
       "id": {
-        "kind": "youtube#channel",
-        "channelId": "fakeChannelId"
+        "kind": "youtube#video",
+        "videoId": "fakeVideoId1"
       },
       "snippet": {
         "publishedAt": "2014-09-27T01:39:18Z",
         "channelId": "UCPGzT4wecuWM0BH9mPiulXg",
-        "title": "fake channel title",
+        "title": "fake video title 1",
         "thumbnails": {
-          "default": {
-            "url": "fake-channel-image.png"
+          "medium": {
+            "url": "fake-video-url-image.png"
           }
         },
         "channelTitle": "fake channel title",
@@ -21,12 +21,12 @@
     {
       "id": {
         "kind": "youtube#video",
-        "videoId": "fakeVideoId"
+        "videoId": "fakeVideoId2"
       },
       "snippet": {
         "publishedAt": "2014-09-27T01:39:18Z",
         "channelId": "UCPGzT4wecuWM0BH9mPiulXg",
-        "title": "fake video title",
+        "title": "fake video title 2",
         "thumbnails": {
           "medium": {
             "url": "fake-video-url-image.png"

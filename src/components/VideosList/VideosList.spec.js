@@ -1,15 +1,12 @@
+import { render, screen } from '@testing-library/react';
 import VideosList from './VideosList.component';
-
-const { render, screen } = require('@testing-library/react');
-
-// test.js
-jest.mock('./youtube-videos-mock.json');
+import dataDummy from './__mocks__/youtube-videos-mock.json';
 
 describe('VideosList', () => {
   let container;
 
   beforeEach(() => {
-    container = render(<VideosList />).container;
+    container = render(<VideosList videos={dataDummy.items} />).container;
   });
 
   test('Should renders VideosList component', () => {
@@ -18,32 +15,35 @@ describe('VideosList', () => {
   });
 
   test('Should contains an image with the thumbnail url', () => {
-    const videoThumbnailImageElement = screen.getByAltText('fake video title thumbnail');
+    const videoThumbnailImageElement = screen.getByAltText(
+      'fake video title 1 thumbnail'
+    );
     expect(videoThumbnailImageElement).toBeInTheDocument();
     expect(videoThumbnailImageElement).toHaveAttribute('src', 'fake-video-url-image.png');
   });
+
   test('Should contains an image with the channel avatar', () => {
-    const channelImageElement = screen.getByAltText('fake channel title');
+    const channelImageElement = screen.getAllByAltText('fake channel title')[0];
     expect(channelImageElement).toBeInTheDocument();
-    expect(channelImageElement).toHaveAttribute('src', 'fake-channel-image.png');
+    expect(channelImageElement).toHaveAttribute('src', 'undraw_default_avatar.svg');
   });
 
   test('Should contains a link redirects to the video url', () => {
-    const linkELement = screen.getByText(/fake video title/i);
+    const linkELement = screen.getByText(/fake video title 1/i);
     expect(linkELement).toBeInTheDocument();
     expect(linkELement).toHaveAttribute(
       'href',
-      'https://www.youtube.com/watch?v=fakeVideoId'
+      'https://www.youtube.com/watch?v=fakeVideoId1'
     );
   });
 
   test('Should shows the channel title', () => {
-    const channelTitleElement = screen.getByText(/fake channel title/i);
+    const channelTitleElement = screen.getAllByText(/fake channel title/i)[0];
     expect(channelTitleElement).toBeInTheDocument();
   });
 
   test('Should shows the video published date', () => {
-    const channelTitleElement = screen.getByText(/2014-09-27T01:39:18Z/i);
+    const channelTitleElement = screen.getAllByText(/2014-09-27T01:39:18Z/i)[0];
     expect(channelTitleElement).toBeInTheDocument();
   });
 });
