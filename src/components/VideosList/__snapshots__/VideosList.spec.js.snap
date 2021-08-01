@@ -7,7 +7,7 @@ exports[`VideosList Should renders VideosList component 1`] = `
   >
     <figure>
       <img
-        alt="fake video title thumbnail"
+        alt="fake video title 1 thumbnail"
         src="fake-video-url-image.png"
       />
     </figure>
@@ -17,16 +17,57 @@ exports[`VideosList Should renders VideosList component 1`] = `
       <img
         alt="fake channel title"
         class="sc-hKFxyN bdMQIT"
-        src="fake-channel-image.png"
+        src="undraw_default_avatar.svg"
       />
       <div
         class="sc-jSFjdj bgycdW margin-x"
       >
         <a
           class="sc-dlnjwi hzuETT"
-          href="https://www.youtube.com/watch?v=fakeVideoId"
+          href="https://www.youtube.com/watch?v=fakeVideoId1"
         >
-          fake video title
+          fake video title 1
+        </a>
+        <div>
+          <p
+            class="sc-eCApnc fpRBdY"
+          >
+            fake channel title
+          </p>
+          <p
+            class="sc-eCApnc fpRBdY"
+          >
+            2014-09-27T01:39:18Z
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-bdnxRM iIRjbH"
+  >
+    <figure>
+      <img
+        alt="fake video title 2 thumbnail"
+        src="fake-video-url-image.png"
+      />
+    </figure>
+    <div
+      class="sc-gtsrHT eMBaCB"
+    >
+      <img
+        alt="fake channel title"
+        class="sc-hKFxyN bdMQIT"
+        src="undraw_default_avatar.svg"
+      />
+      <div
+        class="sc-jSFjdj bgycdW margin-x"
+      >
+        <a
+          class="sc-dlnjwi hzuETT"
+          href="https://www.youtube.com/watch?v=fakeVideoId2"
+        >
+          fake video title 2
         </a>
         <div>
           <p
