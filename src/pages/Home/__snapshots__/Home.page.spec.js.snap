@@ -1,6 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Page Should renders Home page component 1`] = `
+exports[`Home Page Should renders Home page component with VideosList 1`] = `
+<div>
+  <section
+    class="sc-bdnxRM iDdjcH"
+  >
+    ...loading
+  </section>
+</div>
+`;
+
+exports[`Home Page Should renders Home page component with VideosList 2`] = `
 <div>
   <section
     class="sc-bdnxRM iDdjcH"
@@ -12,6 +22,26 @@ exports[`Home Page Should renders Home page component 1`] = `
         Dummy Videos List component
       </p>
     </div>
+  </section>
+</div>
+`;
+
+exports[`Home Page Should renders an Error message 1`] = `
+<div>
+  <section
+    class="sc-bdnxRM iDdjcH"
+  >
+    ...loading
+  </section>
+</div>
+`;
+
+exports[`Home Page Should renders an Error message 2`] = `
+<div>
+  <section
+    class="sc-bdnxRM iDdjcH"
+  >
+    Something was wrong
   </section>
 </div>
 `;

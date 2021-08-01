@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import VideosList from '../../components/VideosList';
+import useSearchQuery from '../../hooks/useSearchQuery';
 
 const Wrapper = styled.section`
   display: flex;
@@ -15,10 +16,13 @@ const Wrapper = styled.section`
   }
 `;
 
-function HomePage() {
+function HomePage({ text }) {
+  const [data, loading, error] = useSearchQuery({ text });
   return (
     <Wrapper>
-      <VideosList />
+      {loading && '...loading'}
+      {error && 'Something was wrong'}
+      {data && <VideosList videos={data.items} />}
     </Wrapper>
   );
 }
