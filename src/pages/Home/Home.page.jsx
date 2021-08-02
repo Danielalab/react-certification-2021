@@ -9,7 +9,6 @@ const Wrapper = styled.section`
   justify-content: space-between;
   padding: 2rem;
   margin-top: 70px;
-  background-color: #fbe8d3;
   @media (max-width: 576px) {
     justify-content: center;
     padding: 1rem;

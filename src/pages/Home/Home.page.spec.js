@@ -2,15 +2,7 @@ import Home from './Home.page';
 
 const { render, screen, waitFor } = require('@testing-library/react');
 
-jest.mock('../../components/VideosList/VideosList.component', () => {
-  return function DummyVideosList() {
-    return (
-      <div data-testid="videos-list">
-        <p>Dummy Videos List component</p>
-      </div>
-    );
-  };
-});
+jest.mock('../../components/VideosList/VideosList.component');
 
 describe('Home Page', () => {
   test('Should renders Home page component with VideosList', async () => {
@@ -20,7 +12,7 @@ describe('Home Page', () => {
         json: () => Promise.resolve({ items: [] }),
       })
     );
-    const { container } = render(<Home />);
+    const { container } = render(<Home text="fake searched text" />);
     loading = screen.getByText(/...loading/i);
     expect(container).toBeInTheDocument();
     expect(loading).toBeInTheDocument();
@@ -42,7 +34,7 @@ describe('Home Page', () => {
         json: () => Promise.reject(new Error('API error')),
       })
     );
-    const { container } = render(<Home />);
+    const { container } = render(<Home text="fake searched text" />);
     loading = screen.getByText(/...loading/i);
     expect(container).toBeInTheDocument();
     expect(loading).toBeInTheDocument();
