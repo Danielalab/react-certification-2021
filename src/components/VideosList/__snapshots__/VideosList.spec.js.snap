@@ -24,7 +24,7 @@ exports[`VideosList Should renders VideosList component 1`] = `
       >
         <a
           class="sc-dlnjwi hzuETT"
-          href="https://www.youtube.com/watch?v=fakeVideoId1"
+          href="/fakeVideoId1"
         >
           fake video title 1
         </a>
@@ -65,7 +65,7 @@ exports[`VideosList Should renders VideosList component 1`] = `
       >
         <a
           class="sc-dlnjwi hzuETT"
-          href="https://www.youtube.com/watch?v=fakeVideoId2"
+          href="/fakeVideoId2"
         >
           fake video title 2
         </a>
