@@ -1,12 +1,15 @@
 import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import VideosList from './VideosList.component';
-import dataDummy from './__mocks__/youtube-videos-mock.json';
+import dataDummy from '../../hooks/tests/responses/searchQuerySuccess.json';
 
 describe('VideosList', () => {
   let container;
 
   beforeEach(() => {
-    container = render(<VideosList videos={dataDummy.items} />).container;
+    container = render(<VideosList videos={dataDummy.items} />, {
+      wrapper: MemoryRouter,
+    }).container;
   });
 
   test('Should renders VideosList component', () => {
@@ -31,10 +34,7 @@ describe('VideosList', () => {
   test('Should contains a link redirects to the video url', () => {
     const linkELement = screen.getByText(/fake video title 1/i);
     expect(linkELement).toBeInTheDocument();
-    expect(linkELement).toHaveAttribute(
-      'href',
-      'https://www.youtube.com/watch?v=fakeVideoId1'
-    );
+    expect(linkELement).toHaveAttribute('href', '/fakeVideoId1');
   });
 
   test('Should shows the channel title', () => {
