@@ -4,6 +4,10 @@ export const buildQueryParams = (params) => {
     .join('&');
 };
 
+export const buildQuery = (query, params) =>
+  `https://youtube.googleapis.com/youtube/v3/${query}?${params}`;
+
 export default {
   buildQueryParams,
+  buildQuery,
 };
