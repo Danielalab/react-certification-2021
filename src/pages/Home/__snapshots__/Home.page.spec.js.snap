@@ -3,7 +3,7 @@
 exports[`Home Page Should renders Home page component with VideosList 1`] = `
 <div>
   <section
-    class="sc-bdnxRM iDdjcH"
+    class="sc-bdnxRM hyfyNv"
   >
     ...loading
   </section>
@@ -13,7 +13,7 @@ exports[`Home Page Should renders Home page component with VideosList 1`] = `
 exports[`Home Page Should renders Home page component with VideosList 2`] = `
 <div>
   <section
-    class="sc-bdnxRM iDdjcH"
+    class="sc-bdnxRM hyfyNv"
   >
     <div
       data-testid="videos-list"
@@ -29,7 +29,7 @@ exports[`Home Page Should renders Home page component with VideosList 2`] = `
 exports[`Home Page Should renders an Error message 1`] = `
 <div>
   <section
-    class="sc-bdnxRM iDdjcH"
+    class="sc-bdnxRM hyfyNv"
   >
     ...loading
   </section>
@@ -39,7 +39,7 @@ exports[`Home Page Should renders an Error message 1`] = `
 exports[`Home Page Should renders an Error message 2`] = `
 <div>
   <section
-    class="sc-bdnxRM iDdjcH"
+    class="sc-bdnxRM hyfyNv"
   >
     Something was wrong
   </section>
