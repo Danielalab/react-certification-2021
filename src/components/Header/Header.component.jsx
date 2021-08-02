@@ -70,7 +70,7 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
-const Header = () => (
+const Header = ({ handleInputChange }) => (
   <HeaderStyled>
     <Wrapper>
       <picture>
@@ -78,7 +78,11 @@ const Header = () => (
         <Logo src={logoDesktop} alt="Pied Piper logo" className="margin-x" />
       </picture>
       <form className="margin-x">
-        <InputSearch type="text" placeholder="Search" />
+        <InputSearch
+          type="text"
+          placeholder="Search"
+          onChange={(event) => handleInputChange(event.target.value)}
+        />
       </form>
     </Wrapper>
     <Wrapper className="nav hide-mobile">
