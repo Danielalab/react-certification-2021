@@ -7,6 +7,7 @@ const LayoutStyled = styled.main`
   flex-direction: column;
   padding: 0;
   box-sizing: border-box;
+  background-color: #fbe8d3;
 `;
 
 function Layout({ children }) {
