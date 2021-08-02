@@ -1,4 +1,12 @@
 {
+  "kind": "youtube#searchListResponse",
+  "etag": "LRviZfd_p3HDDD2uBk5Qv7zaEQU",
+  "nextPageToken": "CBkQAA",
+  "regionCode": "MX",
+  "pageInfo": {
+    "totalResults": 2323,
+    "resultsPerPage": 25
+  },
   "items": [
     {
       "id": {
