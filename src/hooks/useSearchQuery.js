@@ -20,6 +20,9 @@ const useSearchQuery = ({ text, relatedToVideoId, typeResult }) => {
     fetch(YOUTUBE_API_URL)
       .then((response) => response.json())
       .then((jsonData) => {
+        if (jsonData.error) {
+          throw new Error(jsonData);
+        }
         setData(jsonData);
       })
       .catch((err) => {
