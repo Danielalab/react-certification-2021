@@ -1,18 +1,19 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import VideosList from './VideosList.component';
+import VideoThumbnail from './VideoThumbnail.component';
 import dataDummy from '../../hooks/tests/responses/searchQuerySuccess.json';
 
-describe('VideosList', () => {
+describe('VideoThumbnail', () => {
   let container;
 
   beforeEach(() => {
-    container = render(<VideosList videos={dataDummy.items} />, {
+    const { id, snippet } = dataDummy.items[0];
+    container = render(<VideoThumbnail id={id.videoId} videoData={snippet} />, {
       wrapper: MemoryRouter,
     }).container;
   });
 
-  test('Should renders VideosList component', () => {
+  test('Should renders VideoThumbnail component', () => {
     expect(container).toBeInTheDocument();
     expect(container).toMatchSnapshot();
   });

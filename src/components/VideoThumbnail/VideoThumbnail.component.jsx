@@ -33,7 +33,7 @@ const MarginX = styled.div`
   margin: 0 0.75rem;
 `;
 
-const Video = ({ id, videoData }) => (
+const VideoThumbnail = ({ id, videoData }) => (
   <VideoCard>
     <figure>
       <img src={videoData.thumbnails.medium.url} alt={`${videoData.title} thumbnail`} />
@@ -51,11 +51,13 @@ const Video = ({ id, videoData }) => (
   </VideoCard>
 );
 
-const VideosList = ({ videos }) =>
+export default VideoThumbnail;
+
+/* const VideosList = ({ videos }) =>
   videos
     .filter(({ snippet }) => snippet !== undefined)
     .map(({ id, snippet }) => (
       <Video key={id.videoId} id={id.videoId} videoData={snippet} />
     ));
 
-export default VideosList;
+export default VideosList; */
