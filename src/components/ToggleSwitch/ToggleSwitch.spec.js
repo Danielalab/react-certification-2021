@@ -17,7 +17,7 @@ describe('ToggleSwitch', () => {
     expect(labelElement).toBeInTheDocument();
   });
   test('Should contains an input type checkbox', () => {
-    const inputElement = screen.getByTestId('input-checkbox');
+    const inputElement = screen.getByRole('button');
     expect(inputElement).toBeInTheDocument();
     expect(inputElement).toHaveAttribute('type', 'checkbox');
   });

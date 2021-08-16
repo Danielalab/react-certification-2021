@@ -9,8 +9,8 @@ exports[`ToggleSwitch Should renders a ToggleStwitch component 1`] = `
   >
     <input
       class="sc-gtsrHT flAbm"
-      data-testid="input-checkbox"
       id="switch-dark-mode"
+      role="button"
       type="checkbox"
     />
     <span

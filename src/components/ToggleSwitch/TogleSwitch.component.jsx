@@ -61,7 +61,7 @@ const Slider = styled.span`
 
 const ToggleSwitch = () => (
   <ToggleLabel htmlFor="switch-dark-mode" className="switch" role="switch">
-    <Input id="switch-dark-mode" type="checkbox" data-testid="input-checkbox" />
+    <Input id="switch-dark-mode" type="checkbox" role="button" />
     <Slider />
   </ToggleLabel>
 );
