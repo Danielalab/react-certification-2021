@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useParams } from 'react-router';
-import VideosList from '../../components/VideosList';
+import VideoThumbnail from '../../components/VideoThumbnail';
 import VideoPlayer from '../../components/VideoPlayer';
 import useSearchQuery from '../../hooks/useSearchQuery';
 import useVideosQuery from '../../hooks/useVideosQuery';
@@ -48,7 +48,15 @@ function VideoDetailPage() {
       )}
       {relatedVideos && !loadingRelatedVideos && (
         <div>
-          <VideosList videos={relatedVideos.items} />
+          {data.items
+            .filter(({ snippet }) => snippet !== undefined)
+            .map((item) => (
+              <VideoThumbnail
+                key={item.id.videoId}
+                id={item.id.videoId}
+                videoData={item.snippet}
+              />
+            ))}
         </div>
       )}
     </Wrapper>

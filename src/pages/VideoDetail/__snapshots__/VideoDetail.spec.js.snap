@@ -28,10 +28,19 @@ exports[`VideoDetail Page Should renders VideoDetail page component with VideoPl
     </div>
     <div>
       <div
-        data-testid="videos-list"
+        data-testid="video-thumbnail"
       >
         <p>
-          Dummy Videos List component
+          Dummy Video Thumbnail component 
+          fakeVideoId1
+        </p>
+      </div>
+      <div
+        data-testid="video-thumbnail"
+      >
+        <p>
+          Dummy Video Thumbnail component 
+          fakeVideoId2
         </p>
       </div>
     </div>

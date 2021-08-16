@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Page Should renders Home page component with VideosList 1`] = `
+exports[`Home Page Should renders Home page component with VideoThumbnail 1`] = `
 <div>
   <section
     class="sc-bdnxRM hyfyNv"
@@ -10,16 +10,25 @@ exports[`Home Page Should renders Home page component with VideosList 1`] = `
 </div>
 `;
 
-exports[`Home Page Should renders Home page component with VideosList 2`] = `
+exports[`Home Page Should renders Home page component with VideoThumbnail 2`] = `
 <div>
   <section
     class="sc-bdnxRM hyfyNv"
   >
     <div
-      data-testid="videos-list"
+      data-testid="video-thumbnail"
     >
       <p>
-        Dummy Videos List component
+        Dummy Video Thumbnail component 
+        fakeVideoId1
+      </p>
+    </div>
+    <div
+      data-testid="video-thumbnail"
+    >
+      <p>
+        Dummy Video Thumbnail component 
+        fakeVideoId2
       </p>
     </div>
   </section>

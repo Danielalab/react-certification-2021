@@ -6,7 +6,7 @@ import dataDummy from '../../hooks/tests/responses/searchQuerySuccess.json';
 const { render, screen, waitFor } = require('@testing-library/react');
 
 /* mocking children componnets */
-jest.mock('../../components/VideosList/VideosList.component');
+jest.mock('../../components/VideoThumbnail/VideoThumbnail.component');
 jest.mock('../../components/VideoPlayer/VideoPlayer.component');
 
 describe('VideoDetail Page', () => {
@@ -39,14 +39,16 @@ describe('VideoDetail Page', () => {
     expect(container).toMatchSnapshot();
 
     await waitFor(() => {
-      expect(screen.getByTestId('videos-list')).toBeInTheDocument();
+      screen.getAllByTestId('video-thumbnail');
       expect(screen.getByTestId('video-player')).toBeInTheDocument();
     });
-    videosListsComponent = screen.getByTestId('videos-list');
+    videosListsComponent = screen.getAllByTestId('video-thumbnail');
     videoPlayerComponent = screen.getByTestId('video-player');
     loading = screen.queryByText(/...loading/i);
-    expect(videosListsComponent).toBeInTheDocument();
-    expect(videosListsComponent.textContent).toBe('Dummy Videos List component');
+    expect(videosListsComponent[0]).toBeInTheDocument();
+    expect(videosListsComponent[0].textContent).toBe(
+      'Dummy Video Thumbnail component fakeVideoId1'
+    );
     expect(videoPlayerComponent).toBeInTheDocument();
     expect(videoPlayerComponent.textContent).toBe('Dummy Video Player component');
     expect(loading).not.toBeInTheDocument();

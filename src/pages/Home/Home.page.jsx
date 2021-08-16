@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import VideosList from '../../components/VideosList';
+import VideoThumbnail from '../../components/VideoThumbnail';
 import useSearchQuery from '../../hooks/useSearchQuery';
 
 const Wrapper = styled.section`
@@ -21,7 +21,12 @@ function HomePage({ text }) {
     <Wrapper>
       {loading && '...loading'}
       {error && 'Something was wrong'}
-      {data && <VideosList videos={data.items} />}
+      {data &&
+        data.items
+          .filter(({ snippet }) => snippet !== undefined)
+          .map(({ id, snippet }) => (
+            <VideoThumbnail key={id.videoId} id={id.videoId} videoData={snippet} />
+          ))}
     </Wrapper>
   );
 }
