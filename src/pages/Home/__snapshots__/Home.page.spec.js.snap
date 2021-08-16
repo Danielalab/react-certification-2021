@@ -54,3 +54,23 @@ exports[`Home Page Should renders an Error message 2`] = `
   </section>
 </div>
 `;
+
+exports[`Home Page Should renders an Error message 1`] = `
+<div>
+  <section
+    class="sc-bdnxRM hyfyNv"
+  >
+    ...loading
+  </section>
+</div>
+`;
+
+exports[`Home Page Should renders an Error message 2`] = `
+<div>
+  <section
+    class="sc-bdnxRM hyfyNv"
+  >
+    Something was wrong
+  </section>
+</div>
+`;
