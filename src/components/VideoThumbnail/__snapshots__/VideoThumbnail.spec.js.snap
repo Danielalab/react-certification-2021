@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`VideosList Should renders VideosList component 1`] = `
+exports[`VideoThumbnail Should renders VideoThumbnail component 1`] = `
 <div>
   <div
     class="sc-bdnxRM iIRjbH"
   >
     <figure>
       <img
-        alt="fake video title thumbnail"
+        alt="fake video title 1 thumbnail"
         src="fake-video-url-image.png"
       />
     </figure>
@@ -17,16 +17,16 @@ exports[`VideosList Should renders VideosList component 1`] = `
       <img
         alt="fake channel title"
         class="sc-hKFxyN bdMQIT"
-        src="fake-channel-image.png"
+        src="undraw_default_avatar.svg"
       />
       <div
         class="sc-jSFjdj bgycdW margin-x"
       >
         <a
           class="sc-dlnjwi hzuETT"
-          href="https://www.youtube.com/watch?v=fakeVideoId"
+          href="/fakeVideoId1"
         >
-          fake video title
+          fake video title 1
         </a>
         <div>
           <p

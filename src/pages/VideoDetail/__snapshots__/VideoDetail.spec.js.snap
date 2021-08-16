@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoDetail Page Should renders VideoDetail page component with VideoPlayer & VideosList 1`] = `
+<div>
+  <section
+    class="sc-bdnxRM hyfyNv"
+  >
+    ...loading
+  </section>
+</div>
+`;
+
+exports[`VideoDetail Page Should renders VideoDetail page component with VideoPlayer & VideosList 2`] = `
+<div>
+  <section
+    class="sc-bdnxRM hyfyNv"
+  >
+    <div
+      class="sc-gtsrHT csNJBk"
+    >
+      <div
+        data-testid="video-player"
+      >
+        <p>
+          Dummy Video Player component
+        </p>
+      </div>
+    </div>
+    <div>
+      <div
+        data-testid="video-thumbnail"
+      >
+        <p>
+          Dummy Video Thumbnail component 
+          fakeVideoId1
+        </p>
+      </div>
+      <div
+        data-testid="video-thumbnail"
+      >
+        <p>
+          Dummy Video Thumbnail component 
+          fakeVideoId2
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`VideoDetail Page Should renders an Error message 1`] = `
+<div>
+  <section
+    class="sc-bdnxRM hyfyNv"
+  >
+    ...loading
+  </section>
+</div>
+`;
+
+exports[`VideoDetail Page Should renders an Error message 2`] = `
+<div>
+  <section
+    class="sc-bdnxRM hyfyNv"
+  >
+    Something was wrong
+  </section>
+</div>
+`;

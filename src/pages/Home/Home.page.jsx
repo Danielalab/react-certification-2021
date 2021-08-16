@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import VideosList from '../../components/VideosList';
+import VideoThumbnail from '../../components/VideoThumbnail';
+import useSearchQuery from '../../hooks/useSearchQuery';
 
 const Wrapper = styled.section`
   display: flex;
@@ -8,17 +9,24 @@ const Wrapper = styled.section`
   justify-content: space-between;
   padding: 2rem;
   margin-top: 70px;
-  background-color: #fbe8d3;
   @media (max-width: 576px) {
     justify-content: center;
     padding: 1rem;
   }
 `;
 
-function HomePage() {
+function HomePage({ text }) {
+  const [data, loading, error] = useSearchQuery({ text });
   return (
     <Wrapper>
-      <VideosList />
+      {loading && '...loading'}
+      {error && 'Something was wrong'}
+      {data &&
+        data.items
+          .filter(({ snippet }) => snippet !== undefined)
+          .map(({ id, snippet }) => (
+            <VideoThumbnail key={id.videoId} id={id.videoId} videoData={snippet} />
+          ))}
     </Wrapper>
   );
 }
