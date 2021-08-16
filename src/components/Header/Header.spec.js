@@ -1,12 +1,13 @@
 import Header from './Header.component';
 
-const { render, screen } = require('@testing-library/react');
+const { render, screen, fireEvent } = require('@testing-library/react');
 
 describe('Header', () => {
   let container;
+  const handleInputChangeMock = jest.fn();
 
   beforeEach(() => {
-    container = render(<Header />).container;
+    container = render(<Header handleInputChange={handleInputChangeMock} />).container;
   });
 
   test('Should renders Header component', () => {
@@ -34,5 +35,20 @@ describe('Header', () => {
     const inputElement = screen.getByPlaceholderText(/search/i);
     expect(inputElement).toBeInTheDocument();
     expect(inputElement).toHaveAttribute('type', 'text');
+  });
+
+  test('Should contains an button to search a video', () => {
+    const buttonElement = screen.getByLabelText('search');
+    expect(buttonElement).toBeInTheDocument();
+    expect(buttonElement).toHaveAttribute('type', 'submit');
+
+    //  change input value
+    fireEvent.change(screen.getByPlaceholderText(/search/i), {
+      target: { value: 'test' },
+    });
+    fireEvent.click(buttonElement);
+
+    expect(handleInputChangeMock).toBeCalled();
+    expect(handleInputChangeMock).toBeCalledWith('test');
   });
 });

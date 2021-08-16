@@ -6,7 +6,7 @@ exports[`Header Should renders Header component 1`] = `
     class="sc-hKFxyN htvvhm"
   >
     <div
-      class="sc-iCoGMd ihqXQh"
+      class="sc-pNWdM irvinq"
     >
       <picture>
         <source
@@ -15,22 +15,32 @@ exports[`Header Should renders Header component 1`] = `
         />
         <img
           alt="Pied Piper logo"
-          class="sc-gKAaRy eWqJQX margin-x"
+          class="sc-fujyAs etwTAe margin-x"
           src="logo-desktop.png"
         />
       </picture>
       <form
-        class="margin-x"
+        class="sc-eCApnc hxlghG margin-x"
       >
         <input
-          class="sc-eCApnc dIlmAH"
+          class="sc-jSFjdj gtkCkS"
           placeholder="Search"
           type="text"
         />
+        <button
+          aria-label="search"
+          class="sc-gKAaRy eDoPBP"
+          type="submit"
+        >
+          <img
+            alt="loupe icon"
+            src="search_white.svg"
+          />
+        </button>
       </form>
     </div>
     <div
-      class="sc-iCoGMd ihqXQh nav hide-mobile"
+      class="sc-pNWdM irvinq nav hide-mobile"
     >
       <div
         class="margin-x hide-mobile"
@@ -56,7 +66,7 @@ exports[`Header Should renders Header component 1`] = `
       >
         <img
           alt="current user avatar"
-          class="sc-jSFjdj elchRP"
+          class="sc-iCoGMd bfUTmf"
           src="undraw_female_avatar.svg"
         />
       </figure>
