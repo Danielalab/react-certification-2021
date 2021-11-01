@@ -1,3 +1,6 @@
-# Wizeline Academy - 2021 React Bootcamp
+# Pied piper
 
-Please refere to the following [GIST](https://gist.github.com/villacoder/9f980254461fa8bfbe93067db2126872) for further instructions
+- state: `work in progress`
+- link: https://amazing-colden-40daa0.netlify.app/
+
+![pied-piper-website](https://user-images.githubusercontent.com/32286663/139730644-972955d8-b965-43f9-9eb2-4fcd2ec25d8c.png)
